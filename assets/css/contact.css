@@ -1,0 +1,123 @@
+.containerContact{
+	width: 100%;
+	height: auto;
+	background-color: #fcfcfc;
+}
+.contactWrapper{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	opacity: .9;
+}
+
+textarea {
+	resize: none;
+}
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	border-color: #ffffff;
+	background: #5e9bfc;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	background: 0 0 #ffffff;
+    border: 1px solid #2f323a;	
+}
+#contactH{
+	margin-top: 50px;
+	color:#595959;
+	font-family: Lucida Sans;
+	font-style: italic;
+	padding:10px;
+	text-shadow: 0 2px 5px lightblue;
+}
+#yellow{
+	padding-top: 50px;
+	/* background-color: ghostwhite; */
+	padding-bottom: 50px;
+	margin-bottom: 80px;
+	/* box-shadow: 0 2px 10px #559fd1; */
+}
+#yellow input{
+	border: 1px solid silver;
+	box-shadow: 0 2px 5px lightblue;
+}
+#yellow textarea{
+	border: 1px solid silver;
+	box-shadow: 0 2px 5px lightblue;
+}
+#yellow input::placeholder{
+	color:black;
+}
+#yellow textarea::placeholder{
+	color:black;
+}
+#submit{
+	border:1px solid #5e9bfc;
+	color:white;
+}
+#submit:hover{
+	color: #5e9bfc;
+}
+
+
+@media(max-width: 767px){
+	#yellow{
+		padding: 20px;
+	}
+	.contactDiv{
+	margin-top: 50px;
+	margin-bottom: -150px;
+	}
+
+}
+
+#contact-form{
+	background-color: white;
+	padding: 30px 20px;
+	box-shadow: 0 2px 5px grey;
+	
+}
+.contactDiv{
+	height: 500px;
+	background-color: transparent;
+}
+.contactLocation{
+	padding:10px 15px;
+}
+.contactLocation h3{
+	color: grey;
+}

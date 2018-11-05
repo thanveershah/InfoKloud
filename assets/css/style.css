@@ -1,0 +1,470 @@
+body{
+	margin:0;
+	padding:0;
+}
+.container-fluid{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.banner{
+	background:black;
+	color:white;
+	height:660px;
+	overflow: hidden;
+
+}
+.textbox{
+ 	text-align: center;
+ 	margin: 90px auto 0;
+}
+.textbox h1{
+	padding: 50px;
+	animation:fadeInDown 5s ease;
+}
+.header{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-color: ghostwhite;
+	box-shadow: 0 1px 10px black;
+	height: 80px;
+	transition: 1s;
+	border:1px transparent solid;
+	/*border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;*/
+	background-color: #e8e8e8;
+	z-index: 2;
+}
+.header ul li a{
+	color:black;
+	font-size: 23px;
+}
+.header ul li a:hover{
+	background-color: none;
+}
+
+.header ul{
+	position: relative;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.content{
+	margin-top: -80px;
+	background-color: ghostwhite;
+	height: 500px;
+}
+
+.sticky{
+	position: fixed;
+	left: 0;
+	top:0;
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 50px;
+	transition: 1s;
+	z-index: 10;
+
+}
+
+.textbox input{
+	border-radius: 2px;
+	border:none;
+	width: 80%;
+	color: black;
+	transition: .5s;
+	outline: none;
+	padding:30px;
+	margin: 0 50px;
+}
+.textbox #searchComplete{
+	width: 80%;
+	height: 200px;
+	display: none;
+	background-color: white;
+	overflow: auto;
+	border: 1px solid grey;
+	margin: 0 auto;
+}
+.textbox #searchComplete a{
+	color: black;
+}
+
+.textbox #textbox2{
+	display: none;
+}
+
+#particles-js{	
+	overflow: hidden;
+}
+
+/*===========================================================================================WHATSAPP*/
+
+#whatsappNew{
+	color: rgb(0, 255, 93);
+}
+
+/*===========================================================================================DropDown*/
+#dropdown{
+	width: 300px;
+	color:grey;
+	height: 60px;
+	border-radius: 2px; 
+	outline: none;
+	background-color: #005cb9;
+	color:ghostwhite;
+	border-color:	#005cb9;
+}
+/*===========================================================================================NavBar*/
+#navbar #login{
+	padding:10px;
+	background-color: #005ff9;
+	transition: .5s;
+}
+
+#navbar #login:hover{
+	text-decoration: none;
+	color:white;
+	background-color: #0144afff;
+	transition: .5s;
+
+}
+
+.navbarNew{
+	width: 100%;
+	height: auto;
+	background:rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	z-index: 9999;
+}
+.navbarNew a:nth-child(2),
+.navbarNew a:nth-child(3),
+.navbarNew a:nth-child(4),
+.navbarNew a:nth-child(5),
+.navbarNew a:nth-child(6),
+.navbarNew a:nth-child(7){
+	display: none; 
+}
+/*====================================================================================BEFORE Toggle Button*/
+#navbar #bars{
+	background-color: transparent;
+	margin-right: 10px;
+}
+
+#navbar #bars .bar:nth-child(1){
+	width: 30px;
+	height: 2px;
+	margin: 5px; 
+	background-color: white;
+	transition: .5s;
+}
+#navbar #bars .bar:nth-child(2){
+	width: 20px;
+	height: 2px;
+	margin: 5px; 
+	background-color: blue;
+	transition: .5s;
+}
+#navbar #bars .bar:nth-child(3){
+	width: 12px;
+	height: 2px;
+	margin: 5px; 
+	background-color: white;
+	transition: .6s;
+}
+#navbar #bars:hover .bar:nth-child(2){
+	width: 30px;
+	height: 2px;
+	margin: 5px; 
+	background-color: blue;
+	transition: .5s;
+}
+#navbar #bars:hover .bar:nth-child(3){
+	width: 30px;
+	height: 2px;
+	margin: 5px; 
+	background-color: white;
+	transition: .6s;
+}
+
+/*===============================================================================After Tooggle*/
+#navbar #bars .clicked:nth-child(2){
+	width: 30px;
+	height: 2px;
+	transition: .5s;
+	background-color: transparent;
+	
+}
+#navbar #bars:hover .clicked:nth-child(2){
+	width: 30px;
+	height: 2px;
+	transition: .5s;
+	background-color: transparent;
+
+}
+#navbar #bars .clicked:nth-child(1){
+	width: 30px;
+	height: 2px;
+	transform: rotate(-45deg);
+	position: relative;
+	top: 6px;
+	transition: .5s;
+	
+}
+#navbar #bars:hover .clicked:nth-child(1){
+	width: 30px;
+	height: 2px;
+	transition: .5s;
+}
+
+#navbar #bars .clicked:nth-child(3){
+	width: 30px;
+	height: 2px;
+	position: relative;
+	top:-6px;
+	transform: rotate(45deg);
+	transition: .5s;
+}
+#navbar #bars:hover .clicked:nth-child(3){
+	width: 30px;
+	height: 2px;
+	transition: .5s;
+}
+#mySidebar{
+	background-color: red;
+	color:black;
+}
+
+.navbarSlide{
+		width: 20%;
+		height: 100%;
+		position: fixed;
+		top:0;
+		left:-100%;
+		background:black;
+		display: none;
+		color:white;
+		font-size: 30px;	
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		opacity: 1;
+		z-index: 99999999999;
+	}
+	.navbarSlide button{
+		position: absolute;
+		top:10px;
+		right: 10px;
+		opacity: .8	;
+	}
+	.navbarSlide .closeToggle{
+		color:white;
+		opacity: 1;	
+		font-size: 40px;
+	}
+	.navbarSlide ul,
+	.navbarSlide li,
+	.navbarSlide a{
+		text-decoration: none;
+		list-style: none;
+		padding: 10px;
+	}
+
+	.navbarSlide a{
+		color:silver;
+	}
+	.navbarSlide a:hover{
+		color:#064de8;
+	}
+
+/*=================================================================================MainFoooter*/
+
+.mainFooter{
+	background-color: rgb(22, 22, 22);
+	min-height: 300px;
+	overflow: hidden;
+	padding: 0 52px;	
+	padding-top:20px;	
+	color:#a8a8a8;
+		
+
+}
+#hr,#hr2,#hr3{
+	border:1px solid #444444;
+}
+.part1{
+	height: auto;
+}
+.part1 h2{
+	color:#d8d6d6;
+	font-size: 25px;
+}
+.part2{
+	clear: 	both;
+	height: auto;	
+	margin-left: 50px;
+	
+}
+
+.part4 h2{
+	color:#d8d6d6;
+	text-align: left;
+	font-size: 25px;
+}
+.part2 h2{
+	color:#d8d6d6;
+	text-align: left;	
+	font-size: 25px;
+}
+.part4 ul,
+.part4 li,
+.part4 a{
+	margin-left: -10px;
+	text-align: left;	
+	text-decoration: none;
+	list-style: none;
+}
+.part4 a:hover{
+	color:#005ff9;
+}
+.part2 ul,
+.part2 li,
+.part2 a{
+	margin-left: -10px;
+	text-align: left;	
+	text-decoration: none;
+	list-style: none;
+}
+.part2 a:hover{
+	color:#005ff9;
+}
+.part3{
+	height: auto;
+}
+.part3{
+	color:ghostwhite;
+	text-align: left;
+
+}
+
+
+.part3 ul,
+.part3 li,
+.part3 a{
+	text-decoration: none;
+	list-style: none;
+	margin-top: 10px;
+	text-align: center;	
+}
+
+
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ #social-fb{
+ 	color:#0074f9;
+ }
+
+  #social-gp{
+  	color:#f91b1b;
+  }
+ #social-fb:hover {
+     color: #2157ff;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+
+/*===============================================================================FOOOOOTER*/
+.footer{
+	height: 50px;
+	background-color: black;
+	font-family: sans-serif;
+	color:darkgrey;
+	overflow: hidden;
+}
+.footer p:nth-child(1){
+	float: left;
+	margin-top: 15px;
+	margin-left: 70px;
+}
+
+.footer p:nth-child(2){
+	margin-top: 15px;
+	margin-right: 70px;
+	float: right;
+	color:darkgrey;
+}
+
+/* =========================================Content================================================ */
+
+.contentWrapper{
+background: white;
+height: 100%;
+overflow: hidden;
+}
+.contentWrapper{
+	color:#4c4c4c;
+}
+
+#tableDiv{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 100px;
+	width: 80%;
+	padding-top: 20px;
+	background: white;
+	box-shadow: 0 1px 15px #254859;
+	height: 100%;
+	margin-top: 30px;
+}
+.rightCorner{
+	float: right;
+	font-family: Forte;
+	font-size: 20px;
+}
+.dataColor{
+	color:#5491f2;
+}
+.logoClass{
+	width:50px;
+	height: 50px;
+	margin-right: 10px;
+}
+#table th{
+	color:grey;
+}
+
+#tableDiv h1{
+	text-shadow: 2px 1px 1px lightgrey; 
+}

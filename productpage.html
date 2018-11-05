@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/companydetails.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="assets/css/jquery.range.css">
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="assets/css/mediaq.css">
+ 	<!-- <script src="assets/js/queryloader2.min.js"></script> -->
+ 	<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        QueryLoader2(document.querySelector("body"), {
+            barColor: "white",
+            backgroundColor: "#111",
+            percentage: true,
+            barHeight: 1,
+            minimumTime: 1000,
+            fadeOutTime: 1000
+        });
+    });
+</script>
+</head>
+<body>
+	<!-- ==========NavBar============== -->
+<div class="navbarSlide">
+  <button class="close"><i class="fa fa-times-circle closeToggle"></i></button>
+  <ul>
+    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+    <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+  </ul>
+</div> 
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+				<div id="navbar" class="w3-bar w3-black"  onclick="w3_open()">
+				  <button id="bars" class="w3-bar-item">
+				  	<div class="bar"></div>
+				  	<div class="bar"></div>
+				  	<div class="bar"></div>
+				  </button>
+				  
+				  <a href="" target="_blank" class="w3-bar-item w3-button fb"><i class="fa fa-facebook-official"></i></a>
+				  <a href="#" target="_blank" class="w3-bar-item w3-button" id="whatsapp"><i class="fa fa-whatsapp"></i></a>
+				  <a href="https://plus.google.com/u/0/108057256461415462922" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-google-plus"></i></a>
+				  <a href="https://twitter.com/blutiuminfotech" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+				  <a href="#" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+				  <a href="https://www.linkedin.com/in/blutium-infotech-320752169/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BJb0pd0I0SpWS6GjRKRalbQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_company_admin-nav.settings_view_profile" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+				  <!--   -->
+				  <a href="#" id="login" class="w3-right"><i class="glyphicon glyphicon-log-in"></i> Login</a>  
+				</div>
+		</div>
+		
+<!-- =================LOGIN/SIGNUP======== -->
+<div class="con">
+  <button id="close" class="close"><i class="fa fa-times-circle" id="#close"></i></button>
+  <div class="container">
+    <div class="flip">
+      <div class="login">
+        <h2 class="active"> login</h2>
+          <h2 class="nonactive"> sign up </h2>
+          <form>
+          <input type="email" class="text" name="email" placeholder="Email">          
+          <br> 
+          <input type="password" class="text" name="password" placeholder="Password">
+          <br>
+          <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" name="checkbox" />
+            <label for="checkbox-1-1">Keep me Signed in</label>
+          <button type="submit" class="signin" name="login">Login</button>
+          <hr>  
+          <a id="forget" href="#">Forgot Password?</a>
+        </form>
+      </div>
+      <div class="back login">
+        <h2 class="activeS"> sign up</h2>
+              <h2 class="nonactiveS"> login </h2>
+          <form>
+              <input type="email" class="text" name="email" placeholder="Email">   
+              <br> 
+              <div class="firstandlast">
+              <input type="text" class="text" id="firstname" name="firstname" placeholder="FIRSTNAME">
+        <input type="text" id="lastname" class="text" name="lastname" placeholder="LASTNAME">
+        </div>
+        <br> 
+              <input type="password" class="text" name="password" id="passSign" placeholder="Password">
+              <button type="submit" id="signInBtn" class="signin" name="signup">SignUp</button>
+              <hr>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="already">Already have an account?</span>
+          </form>
+      </div>
+    </div>
+    
+  </div>
+  <div class="forget">
+      <button id="forgetClose">X</button>
+      <h2>Forgot Your Password?</h2>
+      <h5>Enter your registered email address to get password reset instructions.</h5>
+        <form>
+          <input type="email" class="text" name="forgetpassword" placeholder="Email...">
+          <br>
+          <button type="submit" id="forgetBtn" name="forgetBtn">Submit</button>
+        </form>
+  </div>
+</div>
+
+
+
+
+<!-- ======================================Content========================================== -->
+<div class="container-flex">
+	<div class="row">
+		<div class="col-md-6 col-xs-12">
+			<div class="wrapper">
+				<div class="companyDetails">
+					<img  src="TNT003-thumb.jpg" class="" id="logoCompany">
+					<h1 class="companyName">Blutium Infotech<small class="productName"> - InfoKloud</small></h1>
+					<p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+				<div class="related">
+					<h3>Products Related To Infokloud</h3>
+					<p><span class="relatedPro">Microsoft</span></p>
+					<p><span class="relatedPro">Microsoft</span></p>
+					<p><span class="relatedPro">Microsoft</span></p>
+					<p><span class="relatedPro">Microsoft</span></p>
+					<p><span class="relatedPro">Microsoft</span></p>
+					<p><span class="relatedPro">Microsoft</span></p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="countWrapper">
+					<div class="count">
+						<h3 id="totalCount">Total Count Of Companies</h3>
+						<h1 id="number"><i id="green" class="fa fa-globe"></i> 10,000</h1>
+					</div>
+					<div class="filter">
+						<h2>-Filter-</h2>
+						<div class="slider">
+
+							<input type="text" name="" id="categories" placeholder="Categories"><!-- <p class="selectedCategories"><span>Hey</span></p> -->
+              <div id="autoComplete">
+                <table>
+                  <tr class="data">
+                    <td>
+                      <a href="">XXX</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+							<h4>REVENUE:</h4><input type="hidden" class="range-slider" value="10,2000" />
+							<h4>EMPLOYEES:</h4><input type="hidden" class="range-slider" value="10,5000" />
+							<div class="selection">
+							<span>LOCATION:</span><select id="location">
+							<option id="">All Countries</option>
+							<option id="choose" value="">XXXX</option>
+						</select><!-- 	 -->
+							<span id="industrySpan">INDUSTRIES:</span><select id="Industriestries">
+							<option id="">All Industries</option>
+							<option id="choose" value="">XXXX</option>
+						</select>
+						</div>
+						<div class="button-group">
+						<input type="submit" id="searchBtn" class="btn btn-success" value="Search" name="">
+						<input type="submit" class="btn btn-danger" id="reset" value="Reset" name="">
+						</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+      <div class="col-md-12">
+        <div class="companiesUsing">
+           <h1>Companies Currently Using InfoKloud</h1>
+           <div class="companyTable">
+             <table>
+               <tr>
+                 <th>COMPANY NAME </th>
+                 <th>WEBSITE</th>
+                 <th>HQ ADDRESS</th>
+                 <th>CITY</th>
+                 <th>STATE</th> 
+                 <th>ZIP</th>
+                 <th>COUNTRY</th>
+                 <th>EMPLOYEES</th>
+                 <th>REVENUE (USD)</th>
+                 <th>PHONE</th>
+               </tr>
+               <tr>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+                 <td>xxxx</td>
+               </tr>
+
+             </table>
+           </div>
+       </div>
+      </div>
+
+			<div class="col-md-12">
+  			<div class="contentWrapper">	
+  				<h1 id="firm"><i class="fa fa-info-circle" id="info-circle"></i> Firmographics of Companies using InfoKloud</h1>
+  				<h2>Location</h2>
+  				<div id="chartdiv"></div>  
+  				<h2>Revenue</h2>
+  				<div id="chartdiv2"></div>	
+  				<h2>Employees</h2>
+  				<div id="chartdiv3"></div>
+  				<h2>Industry</h2>
+  				<div id="chartdiv4"></div>	
+  			</div>
+			</div>
+				
+		</div>
+	</div>
+<div class="col-md-12 col-xs-12 col-sm-12">
+            <div class="mainFooter">
+              <div class="col-md-5 col-sm-5 col-xs-12"> 
+                <div class="part1"> 
+                  <h2>More About The Company</h2> 
+                  <hr id="hr"> 
+                  <p style="float: left;color:#a8a8a8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br><small style="float: right; color:grey"> -InfoKloud</small></p> 
+                </div>
+              </div>
+        <div class="col-md-3 col-sm-3 col-xs-12"> 
+            <div class="part2"> 
+              <h2>About</h2>
+              <hr id="hr2"> 
+              <ul > 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms Of Services</a></li>  
+              </ul>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12"> 
+                <div class="part4">
+                  <h2>Help</h2>
+                  <hr id="hr3"> 
+                  <ul > 
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="">Resources</a></li>
+                  <li><a href="">FAQ</a></li>   
+                  </ul>
+                </div>     
+         </div>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="part3"> 
+            <ul>
+            <li><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+                  <li><a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+                  <li> <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+                  <li> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-12 col-xs-12 col-sm-12">
+          <div class="footer">
+            <p>Copyright © 2018 Blutium, All Rights Reserved</p>
+            <p>Designed And Developed By InfoKloud</p>
+          </div>
+       </div>
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/jquery.range.js"></script>
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script>
+  //=========AUTOCOMPLETE==============//
+	addEventListener('input',function() {  
+    var autoComplete = document.getElementById('autoComplete');
+    var categories = document.getElementById('categories');
+    if(categories.value.length > 0 ){
+    autoComplete.style.display = "block";
+  }else {
+    autoComplete.style.display = "none";
+  }
+});
+
+	 $(window).on('load',function(){
+      	$('.companyDetails').mCustomScrollbar({theme:"dark",autoHideScrollbar:true});
+      });
+
+
+	$(document).ready(function(){
+	/*===========Sticky Menu==========*/
+	$(window).scroll(function(){
+			if ($(this).scrollTop() > 50){
+				$('#navbar').addClass('navbarNew animated fadeInDown')
+			}else{
+				$('#navbar').removeClass('navbarNew animated fadeInDown');
+			}
+		});
+		
+	/*================LoginAndSignUp=====*/
+		$('.nonactive').click(function(){
+			 $('.flip').css('transform','rotateY(180deg)');
+		});
+  		$('.nonactiveS').click(function(){
+     		 $('.flip').css('transform','rotateY(0deg)');
+    	});
+  		$('#login').click(function(){
+			 $('.con').css('display','block');
+		});
+      $('#forget').click(function(){
+      $('.container').fadeOut(700);
+      $('.forget').fadeIn(1000);
+    });
+    $('#forgetClose').click(function(){
+      $('.forget').fadeOut(1000);
+      $('.container').fadeIn(700);
+    });
+
+		$('#close').click(function(){
+			$('.con').slideUp();
+		});
+    $('#bars').click(function(){
+      $('.navbarSlide').css('display','flex').css('width','100%').animate({left:"0",opacity:1})
+    });
+
+    $('.closeToggle').click(function(){
+      $('.navbarSlide').animate({left:"-100%",opacity:0});
+    });
+		$('.range-slider').jRange({
+		    from: 0,
+		    to: 5000,
+		    step: 1,
+		   /* scale: [0,25,50,75,100],*/
+		    format: '%s',
+		    width: 400,
+		    showLabels: true,
+		    isRange : true
+		});
+});
+	var map = AmCharts.makeChart( "chartdiv", {
+
+  "type": "map",
+  "theme": "light",
+  "projection": "miller",
+
+  "dataProvider": {
+    "map": "worldLow",
+    "getAreasFromMap": true
+  },
+  "areasSettings": {
+    "autoZoom": true,
+    "selectedColor": "#CC0000"
+  },
+  "smallMap": {},
+  "export": {
+    "enabled": true,
+    "position": "bottom-right"
+  }
+} );
+	var chart = AmCharts.makeChart("chartdiv2", {
+  "type": "serial",
+  "theme": "light",
+  "dataDateFormat": "YYYY-MM-DD",
+  "precision": 2,
+  "valueAxes": [{
+    "id": "v1",
+    "title": "Sales",
+    "position": "left",
+    "autoGridCount": false,
+    "labelFunction": function(value) {
+      return "$" + Math.round(value) + "M";
+    }
+  }, {
+    "id": "v2",
+    "title": "Market Days",
+    "gridAlpha": 0,
+    "position": "right",
+    "autoGridCount": false
+  }],
+  "graphs": [{
+    "id": "g3",
+    "valueAxis": "v1",
+    "lineColor": "#e1ede9",
+    "fillColors": "#e1ede9",
+    "fillAlphas": 1,
+    "type": "column",
+    "title": "Actual Sales",
+    "valueField": "sales2",
+    "clustered": false,
+    "columnWidth": 0.5,
+    "legendValueText": "$[[value]]M",
+    "balloonText": "[[title]]<br /><b style='font-size: 130%'>$[[value]]M</b>"
+  }, {
+    "id": "g4",
+    "valueAxis": "v1",
+    "lineColor": "#62cf73",
+    "fillColors": "#62cf73",
+    "fillAlphas": 1,
+    "type": "column",
+    "title": "Target Sales",
+    "valueField": "sales1",
+    "clustered": false,
+    "columnWidth": 0.3,
+    "legendValueText": "$[[value]]M",
+    "balloonText": "[[title]]<br /><b style='font-size: 130%'>$[[value]]M</b>"
+  }, {
+    "id": "g1",
+    "valueAxis": "v2",
+    "bullet": "round",
+    "bulletBorderAlpha": 1,
+    "bulletColor": "#FFFFFF",
+    "bulletSize": 5,
+    "hideBulletsCount": 50,
+    "lineThickness": 2,
+    "lineColor": "#20acd4",
+    "type": "smoothedLine",
+    "title": "Market Days",
+    "useLineColorForBulletBorder": true,
+    "valueField": "market1",
+    "balloonText": "[[title]]<br /><b style='font-size: 130%'>[[value]]</b>"
+  }, {
+    "id": "g2",
+    "valueAxis": "v2",
+    "bullet": "round",
+    "bulletBorderAlpha": 1,
+    "bulletColor": "#FFFFFF",
+    "bulletSize": 5,
+    "hideBulletsCount": 50,
+    "lineThickness": 2,
+    "lineColor": "#e1ede9",
+    "type": "smoothedLine",
+    "dashLength": 5,
+    "title": "Market Days ALL",
+    "useLineColorForBulletBorder": true,
+    "valueField": "market2",
+    "balloonText": "[[title]]<br /><b style='font-size: 130%'>[[value]]</b>"
+  }],
+  "chartScrollbar": {
+    "graph": "g1",
+    "oppositeAxis": false,
+    "offset": 30,
+    "scrollbarHeight": 50,
+    "backgroundAlpha": 0,
+    "selectedBackgroundAlpha": 0.1,
+    "selectedBackgroundColor": "#888888",
+    "graphFillAlpha": 0,
+    "graphLineAlpha": 0.5,
+    "selectedGraphFillAlpha": 0,
+    "selectedGraphLineAlpha": 1,
+    "autoGridCount": true,
+    "color": "#AAAAAA"
+  },
+  "chartCursor": {
+    "pan": true,
+    "valueLineEnabled": true,
+    "valueLineBalloonEnabled": true,
+    "cursorAlpha": 0,
+    "valueLineAlpha": 0.2
+  },
+  "categoryField": "date",
+  "categoryAxis": {
+    "parseDates": true,
+    "dashLength": 1,
+    "minorGridEnabled": true
+  },
+  "legend": {
+    "useGraphSettings": true,
+    "position": "top"
+  },
+  "balloon": {
+    "borderThickness": 1,
+    "shadowAlpha": 0
+  },
+  "export": {
+   "enabled": true
+  },
+  "dataProvider": [{
+    "date": "2013-01-16",
+    "market1": 71,
+    "market2": 75,
+    "sales1": 5,
+    "sales2": 8
+  }, {
+    "date": "2013-01-17",
+    "market1": 74,
+    "market2": 78,
+    "sales1": 4,
+    "sales2": 6
+  }, {
+    "date": "2013-01-18",
+    "market1": 78,
+    "market2": 88,
+    "sales1": 5,
+    "sales2": 2
+  }, {
+    "date": "2013-01-19",
+    "market1": 85,
+    "market2": 89,
+    "sales1": 8,
+    "sales2": 9
+  }, {
+    "date": "2013-01-20",
+    "market1": 82,
+    "market2": 89,
+    "sales1": 9,
+    "sales2": 6
+  }, {
+    "date": "2013-01-21",
+    "market1": 83,
+    "market2": 85,
+    "sales1": 3,
+    "sales2": 5
+  }, {
+    "date": "2013-01-22",
+    "market1": 88,
+    "market2": 92,
+    "sales1": 5,
+    "sales2": 7
+  }, {
+    "date": "2013-01-23",
+    "market1": 85,
+    "market2": 90,
+    "sales1": 7,
+    "sales2": 6
+  }, {
+    "date": "2013-01-24",
+    "market1": 85,
+    "market2": 91,
+    "sales1": 9,
+    "sales2": 5
+  }, {
+    "date": "2013-01-25",
+    "market1": 80,
+    "market2": 84,
+    "sales1": 5,
+    "sales2": 8
+  }, {
+    "date": "2013-01-26",
+    "market1": 87,
+    "market2": 92,
+    "sales1": 4,
+    "sales2": 8
+  }, {
+    "date": "2013-01-27",
+    "market1": 84,
+    "market2": 87,
+    "sales1": 3,
+    "sales2": 4
+  }, {
+    "date": "2013-01-28",
+    "market1": 83,
+    "market2": 88,
+    "sales1": 5,
+    "sales2": 7
+  }, {
+    "date": "2013-01-29",
+    "market1": 84,
+    "market2": 87,
+    "sales1": 5,
+    "sales2": 8
+  }, {
+    "date": "2013-01-30",
+    "market1": 81,
+    "market2": 85,
+    "sales1": 4,
+    "sales2": 7
+  }]
+});
+
+var chart = AmCharts.makeChart( "chartdiv3", {
+  "type": "serial",
+  "theme": "light",
+  "dataProvider": [ {
+    "country": "USA",
+    "visits": 2025
+  }, {
+    "country": "China",
+    "visits": 1882
+  }, {
+    "country": "Japan",
+    "visits": 1809
+  }, {
+    "country": "Germany",
+    "visits": 1322
+  }, {
+    "country": "UK",
+    "visits": 1122
+  }, {
+    "country": "France",
+    "visits": 1114
+  }, {
+    "country": "India",
+    "visits": 984
+  }, {
+    "country": "Spain",
+    "visits": 711
+  }, {
+    "country": "Netherlands",
+    "visits": 665
+  }, {
+    "country": "Russia",
+    "visits": 580
+  }, {
+    "country": "South Korea",
+    "visits": 443
+  }, {
+    "country": "Canada",
+    "visits": 441
+  }, {
+    "country": "Brazil",
+    "visits": 395
+  } ],
+  "valueAxes": [ {
+    "gridColor": "#FFFFFF",
+    "gridAlpha": 0.2,
+    "dashLength": 0
+  } ],
+  "gridAboveGraphs": true,
+  "startDuration": 1,
+  "graphs": [ {
+    "balloonText": "[[category]]: <b>[[value]]</b>",
+    "fillAlphas": 0.8,
+    "lineAlpha": 0.2,
+    "type": "column",
+    "valueField": "visits"
+  } ],
+  "chartCursor": {
+    "categoryBalloonEnabled": false,
+    "cursorAlpha": 0,
+    "zoomable": false
+  },
+  "categoryField": "country",
+  "categoryAxis": {
+    "gridPosition": "start",
+    "gridAlpha": 0,
+    "tickPosition": "start",
+    "tickLength": 20
+  },
+  "export": {
+    "enabled": true
+  }
+
+} );
+
+var chart = AmCharts.makeChart("chartdiv4", {
+	"type": "serial",
+     "theme": "light",
+	"categoryField": "year",
+	"rotate": true,
+	"startDuration": 1,
+	"categoryAxis": {
+		"gridPosition": "start",
+		"position": "left"
+	},
+	"trendLines": [],
+	"graphs": [
+		{
+			"balloonText": "Income:[[value]]",
+			"fillAlphas": 0.8,
+			"id": "AmGraph-1",
+			"lineAlpha": 0.2,
+			"title": "Income",
+			"type": "column",
+			"valueField": "income"
+		},
+		{
+			"balloonText": "Expenses:[[value]]",
+			"fillAlphas": 0.8,
+			"id": "AmGraph-2",
+			"lineAlpha": 0.2,
+			"title": "Expenses",
+			"type": "column",
+			"valueField": "expenses"
+		}
+	],
+	"guides": [],
+	"valueAxes": [
+		{
+			"id": "ValueAxis-1",
+			"position": "top",
+			"axisAlpha": 0
+		}
+	],
+	"allLabels": [],
+	"balloon": {},
+	"titles": [],
+	"dataProvider": [
+		{
+			"year": 2005,
+			"income": 23.5,
+			"expenses": 18.1
+		},
+		{
+			"year": 2006,
+			"income": 26.2,
+			"expenses": 22.8
+		},
+		{
+			"year": 2007,
+			"income": 30.1,
+			"expenses": 23.9
+		},
+		{
+			"year": 2008,
+			"income": 29.5,
+			"expenses": 25.1
+		},
+		{
+			"year": 2009,
+			"income": 24.6,
+			"expenses": 25
+		}
+	],
+    "export": {
+    	"enabled": true
+     }
+
+});
+</script>
+</body>
+</html>

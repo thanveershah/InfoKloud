@@ -1,0 +1,252 @@
+@media(max-width: 767px){
+	.part2 {
+	margin-left: 0;
+}
+	.part2 ul,
+	.part2 li,
+	.part2 a{
+	text-align: left;
+}
+	body .part4{
+		margin-top:20px;
+	}
+	.mainFooter{
+		padding: 0;
+		padding-top: 50px;
+	}
+	.part1 p{
+		margin-left: 5px;
+	}
+	.part3 {
+	display: none;
+	}
+	.footer p:nth-child(1){
+	margin-left: 150px;
+}
+
+	.footer p:nth-child(2){
+	display: none;
+	}
+
+}
+
+@media(max-width: 676px){
+	.con .container{
+		width: 300px;
+		height: 400px;
+	}
+	.login form {
+  padding-top: 0;
+}
+
+.signin{
+	font-size: 10px;
+}
+.login h2 {
+  padding-left: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.login span{
+	font-size: 10px;
+	top:-20px;
+} 
+.login .custom-checkbox {
+  padding: 7px;
+}
+.login .text {
+  padding: 18px;  
+  position: relative;
+  top:15px;
+}
+.login label {
+ font-size: 12px;
+}
+.signin{
+	margin-top: 20px;
+}
+.login hr {
+  margin-top: 20px;
+}
+.login a {
+  font-size: 12px;
+}
+
+#already{
+	display: none;
+}
+#firstname::placeholder{
+  font-size: 9px;
+}
+#lastname::placeholder{
+  font-size: 9px;
+}
+#firstname{
+  position: relative;
+  top:1px;
+  width: 100%;
+}
+#lastname{
+  position: relative;
+  top:10px;
+  width: 100%;
+}
+#passSign{
+	position: relative;
+	top:-2px;
+}
+.firstandlast{
+  display: block;
+}
+
+.forget{
+	width: 300px;
+	height: 220px;
+}
+.forget h2{;
+  font-size: 20px;
+
+}
+.forget h5{
+  font-size: 15px;
+}
+.forget .text{
+	padding:15px;
+}
+.forget .text::placeholder{
+ font-size: 12px;
+}
+.forget #forgetBtn{
+  margin-top: 15px;
+  padding:5px 35px;
+}
+
+.para{
+	padding:0 20px;
+	margin-bottom: 50px;
+}
+}
+
+@media(max-width: 516px){
+	 .footer p:nth-child(1){
+	margin-left: 100px;
+}
+
+}
+
+@media(max-width: 463px){
+	.footer p:nth-child(1){
+	margin-left: 50px;
+}
+
+}
+
+@media(max-width: 457px){
+	#navbar a:nth-child(2),
+	#navbar a:nth-child(3),
+	#navbar a:nth-child(4),
+	#navbar a:nth-child(5),
+	#navbar a:nth-child(6),
+	#navbar a:nth-child(7){
+		display: none;
+	}
+
+	.navbarSlide ul li a{
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 390px){
+	.footer p:nth-child(1){
+	margin-left: 65px;
+	font-size: 12px;
+}
+
+}
+
+@media(max-width: 570px){
+	.textbox h1{
+		font-size: 25px;
+	}
+}
+@media(max-width: 390px){
+	.textbox h1{
+		font-size: 20px;
+	}
+	.textbox input{
+		padding:20px;
+		margin-left: 40px;
+	}
+	.banner{
+	height:500px;
+	}
+	.aboutSection h1{
+		font-size: 30px;
+	}
+	.containerContact #contactH{
+	font-size: 20px;
+	font-weight: bolder;
+	padding:0;
+}
+
+}
+
+@media(max-width: 487px){
+	#contactH{
+	font-size: 25px;
+}
+.contentWrapper #firm{
+	font-size: 20px;
+}
+}
+
+@media(max-width: 650px){
+	.contentWrapper #chartdiv{
+		height:400px;
+	}
+	.contentWrapper #chartdiv2{
+		height:400px;
+	}
+	.contentWrapper #chartdiv3{
+		height:400px;
+	}.contentWrapper #chartdiv4{
+		height:400px;
+	}
+	.contentWrapper #firm{
+	font-size: 20px;
+	}
+	.contentWrapper h2{
+	color:black;
+	margin-left: 50px;
+	margin-top: 50px;
+	font-weight: lighter;	
+	}
+}
+
+@media(max-width: 400px){
+	.contentWrapper #chartdiv{
+		height:300px;
+	}
+	.contentWrapper #chartdiv2{
+		height:300px;
+	}
+	.contentWrapper #chartdiv3{
+		height:300px;
+	}.contentWrapper #chartdiv4{
+		height:300px;
+	}
+}
+
+@media(max-width: 450px){
+	.slider #location{
+		margin-left: 18px;
+	}
+	.slider #Industriestries{
+		margin-top: 10px;
+	}
+}

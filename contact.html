@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InfoKloud:Contact</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/about.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/mediaq.css">
+	<script src="assets/js/queryloader2.min.js"></script>
+	<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        QueryLoader2(document.querySelector("body"), {
+            barColor: "white",
+            backgroundColor: "#111",
+            percentage: true,
+            barHeight: 1,
+            minimumTime: 1000,
+            fadeOutTime: 1000
+        });
+    });
+</script>
+</head>
+<body>
+<!-- ==========NavBar============== -->
+<div class="navbarSlide">
+  <button class="close"><i class="fa fa-times-circle closeToggle"></i></button>
+  <ul>
+    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+    <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+  </ul>
+</div> 
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+				<div id="navbar" class="w3-bar w3-black">
+				  <button id="bars" class="w3-bar-item"  onclick="w3_open()">
+				  	<div class="bar"></div>
+				  	<div class="bar"></div>
+				  	<div class="bar"></div>
+				  </button>
+				  
+				  <a href="" target="_blank" class="w3-bar-item w3-button fb"><i class="fa fa-facebook-official"></i></a>
+				  <a href="#" target="_blank" class="w3-bar-item w3-button" id="whatsapp"><i class="fa fa-whatsapp"></i></a>
+				  <a href="https://plus.google.com/u/0/108057256461415462922" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-google-plus"></i></a>
+				  <a href="https://twitter.com/blutiuminfotech" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+				  <a href="#" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+				  <a href="https://www.linkedin.com/in/blutium-infotech-320752169/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BJb0pd0I0SpWS6GjRKRalbQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_company_admin-nav.settings_view_profile" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+				  <!--   -->
+				  <a href="#" id="login" class="w3-right"><i class="glyphicon glyphicon-log-in"></i> Login</a>  
+				</div>
+		</div>
+<!-- =================LOGIN/SIGNUP======== -->
+<div class="con">
+	<button id="close" class="close"><i class="fa fa-times-circle" id="#close"></i></button>
+	<div class="container">
+		<div class="flip">
+			<div class="login">
+				<h2 class="active"> login</h2>
+  				<h2 class="nonactive"> sign up </h2>
+  				<form>
+    			<input type="email" class="text" name="email" placeholder="Email">    			
+   				<br> 
+   				<input type="password" class="text" name="password" placeholder="Password">
+   				<br>
+   				<input type="checkbox" id="checkbox-1-1" class="custom-checkbox" name="checkbox" />
+        	 	<label for="checkbox-1-1">Keep me Signed in</label>
+    			<button type="submit" class="signin" name="login">Login</button>
+    			<hr>	
+    			<a id="forget" href="#">Forgot Password?</a>
+  			</form>
+			</div>
+			<div class="back login">
+				<h2 class="activeS"> sign up</h2>
+          		<h2 class="nonactiveS"> login </h2>
+        	<form>
+          		<input type="email" class="text" name="email" placeholder="Email">   
+          		<br> 
+          		<div class="firstandlast">
+          		<input type="text" class="text" id="firstname" name="firstname" placeholder="FIRSTNAME">
+				<input type="text" id="lastname" class="text" name="lastname" placeholder="LASTNAME">
+				</div>
+				<br> 
+          		<input type="password" class="text" name="password" id="passSign" placeholder="Password">
+          		<button type="submit" id="signInBtn" class="signin" name="signup">SignUp</button>
+          		<hr>
+          		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="already">Already have an account?</span>
+        	</form>
+			</div>
+		</div>
+		
+	</div>
+	<div class="forget">
+			<button id="forgetClose">X</button>
+			<h2>Forgot Your Password?</h2>
+			<h5>Enter your registered email address to get password reset instructions.</h5>
+				<form>
+					<input type="email" class="text" name="forgetpassword" placeholder="Email...">
+					<br>
+					<button type="submit" id="forgetBtn" name="forgetBtn">Submit</button>
+				</form>
+	</div>
+</div>
+
+
+
+<!-- ========================Content============================== -->
+<div class="containerContact">
+	<div class="contactWrapper">
+		<img src="contactMaster.jpg" class="img-responsive">
+	</div>
+	<div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+        <h2 id="contactH">Please Feel Free To Contact Us</h2>
+      </div>
+  </div>
+  <div class="row" id="yellow">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+              <div class="form-group fuk">
+                  <label class="form-label love" for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name fuckk" placeholder="..." tabindex="1" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="..." tabindex="2" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="..." tabindex="3">
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="..." tabindex="4" required></textarea>                                 
+              </div>
+              <div class="text-center">
+                  <button type="submit" id="submit" class="btn btn-start-order">Send Message</button>
+              </div>
+          </form>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      	<div class="contactDiv">
+      		<div class="contactLocation">
+      			<h3><span style="color:#5e99ff;text-shadow:0 2px 5px lightblue">InfoKloud</span> is the leading software development firm. It was founded in the India and is based in Bengaluru, We have presence in other countries as well.</h3>
+      		</div>
+      		<div class="contactLocation">
+      			<h5><img src="india.png"> 15262 NW, Twoponds dr Portland, OR, 97229</h5>
+      		</div>
+      		<div class="contactLocation">
+      			<h5><img src="usa.png"> 263/1, BEML Main Rd, Maruthi Nagar, Malleshpalya, Kaggadasapura, Bengaluru, Karnataka 560075</h5>
+      		</div>
+      	</div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- =================================MainFooter======================== -->
+<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="mainFooter">
+				<div class="col-md-5 col-sm-5 col-xs-12"> 
+				<div class="part1"> 
+					<h2>More About The Company</h2>	
+					<hr id="hr"> 
+					<p style="float: left;color:#a8a8a8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br><small style="float: right; color:grey"> -InfoKloud</small></p>	
+				</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12"> 
+				<div class="part2"> 
+					<h2>About</h2>
+					<hr id="hr2"> 
+					<ul > 
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Terms Of Services</a></li>
+						
+					</ul>
+				</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-12"> 
+								<div class="part4">
+			            <h2>Help</h2>
+			            <hr id="hr3"> 
+			            <ul > 
+			            <li><a href="contact.html">Contact Us</a></li>
+			            <li><a href="">Resources</a></li>
+			            <li><a href="">FAQ</a></li>
+			            
+			          </ul>
+			          </div>				</div>
+				<div class="col-md-2 col-sm-2 col-xs-12">
+					<div class="part3"> 
+					<ul>
+						<li><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+	           			<li><a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+	          			<li> <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+	          			<li> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="footer">
+				<p>Copyright © 2018 Blutium, All Rights Reserved</p>
+				<p>Designed And Developed By InfoKloud</p>
+			</div>
+		</div>
+
+
+
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script >
+	$(document).ready(function(){
+	/*===========Sticky Menu==========*/
+	$(window).scroll(function(){
+			if ($(this).scrollTop() > 50){
+				$('#navbar').addClass('navbarNew animated fadeInDown')
+			}else{
+				$('#navbar').removeClass('navbarNew animated fadeInDown');
+			}
+		});
+
+		$('.nonactive').click(function(){
+			 $('.flip').css('transform','rotateY(180deg)');
+		});
+  		$('.nonactiveS').click(function(){
+     		 $('.flip').css('transform','rotateY(0deg)');
+    	});
+  		$('#login').click(function(){
+			 $('.con').css('display','block');
+		});
+		$('#forget').click(function(){
+			$('.container').fadeOut(700);
+			$('.forget').fadeIn(1000);
+		});
+		$('#forgetClose').click(function(){
+			$('.forget').fadeOut(1000);
+			$('.container').fadeIn(700);
+		});
+
+		$('#close').click(function(){
+			$('.con').slideUp();
+		});
+		$('#bars').click(function(){
+			$('.navbarSlide').css('display','flex').css('width','100%').animate({left:"0",opacity:1})
+		});
+
+		$('.closeToggle').click(function(){
+			$('.navbarSlide').animate({left:"-100%",opacity:0});
+		});
+
+		
+});
+	
+
+</script>
+</body>
+</html>
