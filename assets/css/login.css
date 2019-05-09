@@ -1,49 +1,52 @@
 /*============================================================Login*/
-.con{
-  background-color: rgba(255,255,255,0.7);
+
+.con {
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: 100%;
-  position: fixed; 
+  position: fixed;
   z-index: 100000;
-	top:0;
-	left: 0;
-	animation: anim .5s;
+  top: 0;
+  left: 0;
+  animation: anim .5s;
   display: none;
 }
-@keyframes anim{
-	from{
-		transform: translateY(-100%);
-	}
-	to{
-		transform: translateY(0);
-	}
-}
-	.con .container{
-		width: 400px;
-		height: 500px;
-		position: absolute;
-		top:50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-	}
-	.flip{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		transform-style: preserve-3d;
-		transition: .8s;
-	}
-	
-	.back{
-		transition: .8s;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		transform: rotateY(180deg);
-		backface-visibility: hidden;
-		background-color: orange;
-	}
 
+@keyframes anim {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.con .container {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: .8s;
+}
+
+.back {
+  transition: .8s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: orange;
+}
 
 .signin {
   background-color: silver;
@@ -51,8 +54,8 @@
   color: #fff;
   font-size: 14px;
   letter-spacing: 1px;
-  margin:0;
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .login {
@@ -60,9 +63,9 @@
   height: 100%;
   width: 100%;
   padding: 60px 60px;
-  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center black;   
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat center center black;
   background-size: cover;
-  box-shadow: 0px 10px 60px -5px black;
+  box-shadow: 0px 10px 10px black;
   backface-visibility: hidden;
 }
 
@@ -72,19 +75,22 @@
 
 .login .active {
   border-bottom: 2px solid #1161ed;
-  color:ghostwhite;
+  color: ghostwhite;
 }
-.login .active:hover{
-cursor: inherit;
+
+.login .active:hover {
+  cursor: inherit;
 }
 
 .login .nonactive {
   color: rgba(255, 255, 255, 0.2);
 }
-.login .nonactive:hover{
-	color:darkgrey;
-	cursor: pointer;
+
+.login .nonactive:hover {
+  color: darkgrey;
+  cursor: pointer;
 }
+
 .login h2 {
   padding-left: 12px;
   font-size: 25px;
@@ -99,13 +105,10 @@ cursor: inherit;
   padding-left: 0px;
 }
 
-
-
 .login .text {
-
   border: none;
   width: 100%;
-  padding: 20px;  
+  padding: 20px;
   display: block;
   height: 15px;
   border-radius: 20px;
@@ -113,7 +116,6 @@ cursor: inherit;
   border: 2px solid rgba(255, 255, 255, 0);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-
 }
 
 .login .text:focus {
@@ -123,14 +125,10 @@ cursor: inherit;
   background: rgba(0, 0, 0, 0);
 }
 
-
-.login input[type="text"],
-.login input[type="password"] {
+.login input[type="text"], .login input[type="password"] {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
-
-
 
 .login input {
   display: inline-block;
@@ -138,9 +136,7 @@ cursor: inherit;
   font-size: 14px;
 }
 
-.login h2,
-.login span,
-.login .custom-checkbox {
+.login h2, .login span, .login .custom-checkbox {
   margin-left: 20px;
 }
 
@@ -193,7 +189,7 @@ cursor: inherit;
 
 .signin:hover {
   background: #4082f5;
-  box-shadow: 0px 4px 35px -5px #4082f5;
+  box-shadow: 0px 1px 5px #4082f5;
   cursor: pointer;
 }
 
@@ -212,136 +208,147 @@ cursor: inherit;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.2);
 }
-.login a:hover{
-  color:silver;
+
+.login a:hover {
+  color: silver;
 }
-.con #close{
-	margin-right: 50px;
-	margin-top: 50px;
+
+.con #close {
+  margin-right: 50px;
+  margin-top: 50px;
   font-size: 30px;
   opacity: .8;
 }
-.con #close:hover{
+
+.con #close:hover {
   opacity: .6;
 }
 
-
-
-.login #forget{
+.login #forget {
   position: relative;
-  top:-8px;
+  top: -8px;
 }
 
+#firstname {
+  width: 50%;
+}
 
-#firstname{
+#lastname {
   width: 50%;
 }
-#lastname{
-  width: 50%;
-}
-.firstandlast{
+
+.firstandlast {
   display: flex;
 }
 
-.login .text::placeholder{
-  color:silver;
+.login .text::placeholder {
+  color: silver;
   font-size: 12px;
 }
-.login .text::placeholder{
-  color:silver;
+
+.login .text::placeholder {
+  color: silver;
   font-size: 12px;
 }
+
 /*============================================================SignUp*/
 
 .login .activeS {
   border-bottom: 2px solid #04a024;
-  color:ghostwhite;
+  color: ghostwhite;
 }
-.login .activeS:hover{
-cursor: inherit;
+
+.login .activeS:hover {
+  cursor: inherit;
 }
 
 .login .nonactiveS {
   color: rgba(255, 255, 255, 0.2);
 }
-.login .nonactiveS:hover{
-  color:darkgrey;
+
+.login .nonactiveS:hover {
+  color: darkgrey;
   cursor: pointer;
 }
 
-#signInBtn{
+#signInBtn {
   background-color: #00b225;
 }
 
-#signInBtn:hover{
-  box-shadow: 0px 4px 35px -5px #00ff50;
+#signInBtn:hover {
+  box-shadow: 0px 1px 10px #00ff50;
 }
 
 /*===================FORGET=================[*/
-.forget{
+
+.forget {
   position: absolute;
   width: 600px;
   height: 250px;
   background-color: black;
-  top:50%;
+  top: 50%;
   left: 51%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: none;
   text-align: center;
   padding: 10px 20px;
   box-shadow: 0 2px 15px black;
   border-radius: 3px;
 }
-.forget h2{
-  text-align: center;
-  color:white;
 
+.forget h2 {
+  text-align: center;
+  color: white;
 }
-.forget h5{
+
+.forget h5 {
   margin-top: 10px;
-  color:grey;
+  color: grey;
   text-align: center;
 }
 
-.forget .text{ 
- border: none;
+.forget .text {
+  border: none;
   width: 100%;
-  padding: 20px;  
+  padding: 20px;
   height: 15px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  outline:none;
+  outline: none;
   margin-top: 15px;
-  color:white;
-}
-.forget #forgetBtn{
-  margin-top: 15px;
-  padding:8px 40px;
-  border-radius: 20px;
-  color:white;
-  background-color: red;
-  border:none;
-}
-.forget #forgetBtn:hover{
-  box-shadow: 0px 4px 35px -5px red ;
+  color: white;
 }
 
-.forget .text::placeholder{
-  color:darkgrey;
+.forget #forgetBtn {
+  margin-top: 15px;
+  padding: 8px 40px;
+  border-radius: 20px;
+  color: white;
+  background-color: red;
+  border: none;
 }
-.forget #forgetClose{
+
+.forget #forgetBtn:hover {
+  box-shadow: 0px 1px 5px red;
+}
+
+.forget .text::placeholder {
+  color: darkgrey;
+}
+
+.forget #forgetClose {
   position: absolute;
-  top:10px;
+  top: 10px;
   right: 10px;
-  color:white;
-  background:none;
-  border:none;
+  color: white;
+  background: none;
+  border: none;
   font-weight: bolder;
 }
 
-.forget #forgetClose:hover{
+.forget #forgetClose:hover {
   opacity: .8;
 }
